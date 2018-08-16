@@ -9,7 +9,7 @@ enum stateUnit {
  * Flash an LED
  */
 //% color="#2c3e50" weight=10
-namespace led {
+namespace led2 {
     /**
      * Flash an LED
      * @param led_pin LED pin
