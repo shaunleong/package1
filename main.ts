@@ -1,10 +1,8 @@
 enum PingUnit {
-    //% block="μs"
-    MicroSeconds,
-    //% block="cm"
-    Centimeters,
-    //% block="inches"
-    Inches
+    //% block="On"
+    On,
+    //% block="Off"
+    Off
 }
 
 /**
@@ -33,8 +31,8 @@ namespace sonar {
         const d = pins.pulseIn(echo, PulseValue.High, maxCmDistance * 58);
 
         switch (unit) {
-            case PingUnit.Centimeters: return Math.idiv(d, 58);
-            case PingUnit.Inches: return Math.idiv(d, 148);
+            case PingUnit.On: return Math.idiv(d, 58);
+            case PingUnit.Off: return Math.idiv(d, 148);
             default: return d ;
         }
     }
