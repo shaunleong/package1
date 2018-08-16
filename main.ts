@@ -6,17 +6,17 @@ enum stateUnit {
 }
 
 /**
- * Sonar and ping utilities
+ * Light utilities
  */
 //% color="#2c3e50" weight=10
-namespace sonar {
+namespace light {
     /**
-     * Send a ping and get the echo time (in microseconds) as a result
-     * @param trig tigger pin
-     * @param echo echo pin
+     * Flash an LED
+     * @param ledPin LED pin
+     * @param state state
      */
-    //% blockId=sonar_ping block="ping trig %trig|echo %echo"
-    export function ping(trig: DigitalPin, echo: stateUnit): void {
+    //% blockId=light_flash block="ping ledPin %ledPin|state %state"
+    export function flash(ledPin: DigitalPin, state: stateUnit): void {
 		
     }
 }
