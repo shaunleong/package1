@@ -17,6 +17,8 @@ namespace light {
      */
     //% blockId=light_flash block="ping ledPin %ledPin|state %state"
     export function flash(ledPin: DigitalPin, state: stateUnit): void {
-		
+		pins.digitalWritePin(led_pin, state);
+		control.waitMicros(1000);
+		pins.digitalWritePin(led_pin, !state);
     }
 }
