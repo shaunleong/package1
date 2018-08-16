@@ -1,8 +1,8 @@
 enum stateUnit {
     //% block="On"
-    On = "On",
+    On = 1,
     //% block="Off"
-    Off = "Off"
+    Off = 0
 }
 
 /**
