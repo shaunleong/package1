@@ -1,8 +1,8 @@
 enum PingUnit {
     //% block="On"
-    On,
+    On = "On",
     //% block="Off"
-    Off
+    Off = "Off"
 }
 
 /**
