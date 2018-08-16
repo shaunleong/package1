@@ -16,10 +16,10 @@ namespace light {
      * @param state state
      */
     //% blockId=light_flash block="ping ledPin %ledPin|state %state"
-    export function flash(ledPin: DigitalPin, state: stateUnit): void {
+    export function flash(ledPin: AnalogPin, state: stateUnit): void {
 		//pins.setPull(trig, PinPullMode.PullNone);
-		pins.digitalWritePin(led_pin, state);
+		pins.analogWritePin(led_pin, state);
 		control.waitMicros(1000);
-		pins.digitalWritePin(led_pin, !state);
+		pins.analogWritePin(led_pin, !state);
     }
 }
