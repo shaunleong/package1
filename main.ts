@@ -1,4 +1,4 @@
-enum PingUnit {
+enum stateUnit {
     //% block="on"
 	On,
 	//% block="off"
@@ -6,7 +6,7 @@ enum PingUnit {
 }
 
 /**
- * Sonar and ping utilities
+ * Toggle an LED
  */
 //% color="#2c3e50" weight=10
 namespace led {
@@ -16,7 +16,7 @@ namespace led {
      * @param state on or off
      */
     //% blockId=led_toggle="led toggle led_pin %led_pin|state %state"
-    export function toggle(led_pin: AnalogPin, state: boolean): void {
+    export function toggle(led_pin: AnalogPin, state: stateUnit): void {
 		pins.digitalWritePin(led_pin, state);
 		control.waitMicros(1000);
 		pins.digitalWritePin(led_pin, !state);
