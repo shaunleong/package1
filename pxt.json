@@ -1,6 +1,6 @@
 {
-    "name": "pxt-package",
-    "version": "1.1.0",
+    "name": "pxt-led2",
+    "version": "0.0.5",
     "description": "A MakeCode package",
     "license": "MIT",
     "dependencies": {
